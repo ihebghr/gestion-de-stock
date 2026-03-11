@@ -79,7 +79,47 @@ npm install
 npm start
 ```
 
-## 👤 Création du Compte Administrateur
+## � Démarrage Rapide (Windows)
+
+### Méthode 1: Script Automatique (Recommandé)
+
+Pour démarrer rapidement les deux serveurs en un seul clic:
+
+1. **Double-cliquer sur `Start.bat`** dans le dossier racine du projet
+2. **Attendre 5 secondes** pour l'initialisation des serveurs
+3. **Accéder à l'application:** http://localhost:3000
+
+### Contenu du Script `Start.bat`
+**MODIFY THE PATH FOR THE BACKEND AND THE FRONTEND IN UR LOCAL MACHINE**
+```batch
+@echo off
+:: Start Backend
+start /min cmd /c "cd /d C:\Users\YOURUSERNAME\Desktop\gestion de stock\backend && npm run dev"
+
+:: Start Frontend
+start /min cmd /c "cd /d C:\Users\YOURUSERNAME\Desktop\gestion de stock\frontend && npm start"
+
+:: Wait 5 seconds for servers to initialize, then open browser
+timeout /t 5
+```
+
+### Méthode 2: Manuel (Alternative)
+
+Si le script ne fonctionne pas, démarrer manuellement:
+
+1. **Terminal 1 - Backend:**
+```bash
+cd backend
+npm run dev
+```
+
+2. **Terminal 2 - Frontend:**
+```bash
+cd frontend
+npm start
+```
+
+## �� Création du Compte Administrateur
 
 ### ⚠️ Important: Pas d'interface d'inscription
 
